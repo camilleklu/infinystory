@@ -15,8 +15,8 @@ return new class extends Migration {
             $table->string('title')->nullable();
             $table->longText('summary')->nullable();
             $table->text('prompt')->nullable();
-            $table->longText('body');
-            $table->string('status')->default('draft')->after('body');
+            $table->longText('body')->nullable();
+            $table->string('status')->default('draft');
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
             $table->timestamps();
         });

@@ -51,7 +51,7 @@
 
                     {{-- Extrait --}}
                     <p class="text-gray-700 flex-grow">
-                        {{ Str::limit($story->summary ?: $story->body, 150) }}
+                        {{ Str::limit($story->summary ?? $story->chapters->first()?->body ?? 'Pas encore de contenu', 150) }}
                     </p>
 
                     {{-- Bouton "Lire la suite" (Optionnel pour le style) --}}

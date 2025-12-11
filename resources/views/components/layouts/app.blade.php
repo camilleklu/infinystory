@@ -16,7 +16,7 @@
 <body class="min-h-screen bg-emerald-100 antialiased">
     <livewire:header />
     {{ $slot }}
-
+    <livewire:footer />
     @livewireScripts
     @fluxScripts
 </body>

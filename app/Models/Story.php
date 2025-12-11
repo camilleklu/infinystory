@@ -31,11 +31,13 @@ class Story extends Model
 
     public function getExcerptAttribute()
     {
+        // Faire un extrait
         return Str::limit($this->summary ?: $this->body, 150);
     }
 
     public function scopePublished($query)
     {
+        // État de publication
         return $query->where('status', 'published');
     }
 }

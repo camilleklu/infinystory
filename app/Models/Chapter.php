@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Chapter extends Model
 {
 
-    protected $fillable = ['story_id', 'title', 'content'];
+    protected $fillable = ['story_id', 'title', 'body', 'order'];
     public function story()
     {
         // Un chapitre "appartient à" une histoire
