@@ -45,7 +45,12 @@ class StoryGenerator extends Component
         $stream = OpenAI::chat()->createStreamed([
             'model' => 'mistral',
             'messages' => [
-                ['role' => 'system', 'content' => 'Continue cette histoire en reprenant exactement où elle s/est arrêtée. Reprends les derniers mots écrits puis enchaîne naturellement avec la suite. Texte à continuer : [TEXTE_UTILISATEUR]'],
+                [
+                    'role' => 'system',
+                    'content' => "Tu écris exclusivement en français correct.
+                Ta tâche est de continuer l’histoire exactement à l’endroit où elle s’est arrêtée.
+                Reprends les derniers mots du texte utilisateur puis continue naturellement, sans changer de style."
+                ],
                 ['role' => 'user', 'content' => $this->prompt],
             ],
         ]);
