@@ -11,7 +11,7 @@
                         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                     </svg>
-                    InfinyStory
+                    InfinityStory
                 </div>
                 <p class="mt-4 text-sm text-slate-500 leading-relaxed max-w-xs">
                     Libérez votre imagination avec notre assistant d'écriture propulsé par l'intelligence artificielle.
@@ -104,7 +104,7 @@
         {{-- BARRE DU BAS --}}
         <div class="mt-12 border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-xs text-slate-400">
-                &copy; {{ date('Y') }} InfinyStory. Tous droits réservés.
+                &copy; {{ date('Y') }} InfinityStory. Tous droits réservés.
             </p>
             <p class="text-xs text-slate-400 flex items-center gap-1">
                 Fait avec <span class="text-red-400">❤</span> et Livewire
